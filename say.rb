@@ -31,7 +31,10 @@ get "/" do
 end
 
 post "/say" do
-  Mac::TTS.say params[:message], params[:voice].to_sym
+  Thread.new {
+    puts params[:message]
+    Mac::TTS.say params[:message], params[:voice].to_sym
+  }
   index
 end
 
