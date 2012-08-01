@@ -1,4 +1,8 @@
 #!/usr/bin/env ruby
+
+# Bonjour example
+# https://github.com/suwanny/Ruby-Practics/tree/master/discovery
+
   
 require "rubygems"
 require "sinatra"
